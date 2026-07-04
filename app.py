@@ -12,7 +12,7 @@ st.set_page_config(
 # ---------------- LOAD MODEL & DATA ---------------- #
 @st.cache_resource
 def load_model():
-    return joblib.load("model/pipeline.pkl")
+    return joblib.load("model/pipeline (1).pkl")
 
 @st.cache_data
 def load_data():
