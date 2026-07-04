@@ -10,8 +10,9 @@ st.set_page_config(
 )
 
 # ---------------- LOAD MODEL ---------------- #
-with open("model/pipeline.pkl", "rb") as file:
-    model = pickle.load(file)
+import joblib
+
+model = joblib.load("model/pipeline.pkl")
 
 # ---------------- LOAD DATA ---------------- #
 df = pd.read_csv("data/clean_car.csv")
