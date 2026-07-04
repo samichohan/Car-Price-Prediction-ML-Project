@@ -8,16 +8,19 @@ st.set_page_config(
     page_icon="🚗",
     layout="wide"
 )
-import joblib
-import sklearn
-
-st.write("Scikit-learn:", sklearn.__version__)
-st.write("Joblib:", joblib.__version__)
 
 model = joblib.load("model/pipeline.pkl")
 
 # ---------------- LOAD MODEL ---------------- #
+import joblib
+import sklearn
+import sys
 
+st.write("Python:", sys.version)
+st.write("Scikit-learn:", sklearn.__version__)
+st.write("Joblib:", joblib.__version__)
+
+model = joblib.load("model/pipeline.pkl")
 # ---------------- LOAD DATA ---------------- #
 df = pd.read_csv("data/clean_car.csv")
 
