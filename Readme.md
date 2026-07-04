@@ -4,6 +4,10 @@ A professional Machine Learning web application built with **Python**, **Scikit-
 
 ---
 
+Live App: https://car-price-prediction-ml-project-app.streamlit.app/
+
+
+
 ## 📌 Project Overview
 
 This project uses a trained **Decision Tree Regression** model to estimate the selling price of used cars. Users simply enter the car details through a clean Streamlit interface, and the model predicts the approximate market value instantly.
