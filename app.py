@@ -1,6 +1,9 @@
 import streamlit as st
 import pandas as pd
 import pickle
+import joblib
+import sklearn
+import sys
 
 # ---------------- PAGE CONFIG ---------------- #
 st.set_page_config(
@@ -12,9 +15,7 @@ st.set_page_config(
 model = joblib.load("model/pipeline.pkl")
 
 # ---------------- LOAD MODEL ---------------- #
-import joblib
-import sklearn
-import sys
+
 
 st.write("Python:", sys.version)
 st.write("Scikit-learn:", sklearn.__version__)
